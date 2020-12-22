@@ -4,8 +4,8 @@ import './App.css';
 
 function App(){
 
-  const[types, setTypes]= useState(["Grass", "Poison", "Fire", "Water", "Flying", "Bug", "Normal"])
-  const[pokemons, setPokemons]=useState([{
+  const types = ["Grass", "Poison", "Fire", "Water", "Flying", "Bug", "Normal"]
+  const pokemons =[{
     "id": 1,
     "name": {
       "english": "Bulbasaur",
@@ -435,7 +435,7 @@ function App(){
       "Sp. Defense": 70,
       "Speed": 97
     }
-  }]);
+  }];
   const [typeSelected, setTypeSelected]= useState("Todos");
   const handleTypeSelect= (event)=>{setTypeSelected(event.target.value)};
   const [nameFilter, setnameFilter] = useState("");
