@@ -445,8 +445,10 @@ function App(){
 
   return (
     <div className="container">
+    <h1 >POKEDEX</h1>
+   
       <div className="filters">
-        <select onChange={handleTypeSelect}>
+        <select onChange={handleTypeSelect} className='selector'>
            <option key={0} value="Todos">Todos</option>
           {types.map((type, index) =>{
             return(<option key={index+1} value={type}>{type}</option>)
@@ -458,6 +460,8 @@ function App(){
           <input  className="filtro" type="text" placeholder="Busca el pokemon aqui"/>
         </form>
       </div>
+      <br></br>
+     
       <div className="App">
             {
               pokemons.filter(pokemon=>{return typeSelected==="Todos"?true: pokemon.type.includes(typeSelected)}).filter((pokemon) => {
