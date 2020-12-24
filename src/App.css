@@ -160,6 +160,7 @@ select option {
   .card:hover{
     width: 86%;
     height: 86% ;
+    margin: 2% 2.5% 2% 2.5%;
     
   }
   
