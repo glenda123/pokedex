@@ -153,8 +153,14 @@ select option {
 
   .card{
     width:85%;
-    height: 85vh;
+    height: 85%;
+    padding: 2%;
   }
 
+  .card:hover{
+    width: 87%;
+    height: 87% ;
+    padding: 1.5%;
+  }
   
  }
