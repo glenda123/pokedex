@@ -139,3 +139,11 @@ select option {
 .filtro::placeholder{
   color:white
 }
+
+@media (max-width: 575.98px) { 
+
+  .App {
+    display:block;
+    width: 100%;
+  }
+ }
